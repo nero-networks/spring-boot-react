@@ -1,0 +1,11 @@
+auth:
+  endpoint: https://dev.example.com/auth
+
+spring:
+
+  session:
+    store-type: redis
+
+  redis:
+    host: localhost
+    port: 6379

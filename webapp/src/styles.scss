@@ -1,0 +1,24 @@
+
+header > div.logo {
+    height: 94px;
+    background: url(/images/logo.png);
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+header > div.logo > nav {
+    position: absolute;
+    bottom: 0;
+}
+
+header > div.logo > nav > a {
+    color: black;
+    margin: 10px;
+}
+
+button.logout {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

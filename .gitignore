@@ -1,0 +1,10 @@
+.idea
+.gradle
+*.iml
+build
+webapp/dist
+webapp/node_modules
+src/main/resources/static
+
+# tag files
+/tags*

@@ -5,14 +5,7 @@ import com.example.springboot.service.hotel.HotelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/hotel")
@@ -30,12 +23,16 @@ public class HotelController {
   }
 
   @GetMapping("/{id}")
-  public Hotel load(@PathVariable Long id) {
-    return service.load(id);
-  }
+  public Hotel load(@PathVariable String id) { return service.load(id); }
+
+  @PostMapping("/{id}")
+  public String save(@RequestBody Hotel hotel) { return service.save(hotel); }
 
   @PostMapping
-  public Long save(@RequestBody Hotel hotel) {
-    return service.save(hotel);
-  }
+  public String create(@RequestBody Hotel hotel) { return service.create(hotel); }
+
+  @DeleteMapping("/{id}")
+  public Hotel delete(@PathVariable String id) { return service.delete(id); }
+
+
 }

@@ -20,13 +20,13 @@ task wrapper(type: Wrapper) {
   gradleVersion = gradleWrapperVersion
 }
 
-apply plugin: 'checkstyle'
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
-checkstyle { toolVersion checkstyleToolVersion }
+//apply plugin: 'checkstyle'
+//checkstyle { toolVersion checkstyleToolVersion }
 
 repositories {
   jcenter()

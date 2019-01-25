@@ -7,6 +7,7 @@ import Http from '../tools/HttpClient'
 import { HashRouter, Switch, Route } from 'react-router-dom'
 import Welcome from './Welcome'
 import HotelTable from './hotel/HotelTable'
+import HotelForm from './hotel/HotelForm'
 
 export default class PageContainer extends BaseComponent {
 
@@ -20,6 +21,7 @@ export default class PageContainer extends BaseComponent {
                 <Switch>
                     <Route exact path='/' component={Welcome} />
                     <Route path='/hotels' component={HotelTable} />
+                    <Route path='/new' component={HotelForm} />
                 </Switch>
             </HashRouter>) : null
 

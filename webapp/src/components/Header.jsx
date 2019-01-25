@@ -11,8 +11,9 @@ export default class Header extends BaseComponent {
     render() {
         const navi = this.appData.isLoggedIn ? (
                 <nav>
-                    <a href='#/'>Welcome</a> |
+                    <a href='#/'>Welcome</a>
                     <a href='#/hotels'>Hotels</a>
+                    <a href='#/new'>New Hotel</a>
                 </nav>) : null
 
         return (

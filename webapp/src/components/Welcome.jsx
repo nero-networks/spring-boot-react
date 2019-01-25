@@ -17,6 +17,7 @@ export default class Welcome extends BaseComponent {
                 <ul>
                     <li><Link to='/'>Welcome</Link></li>
                     <li><Link to='/hotels'>Hotels</Link></li>
+                    <li><Link to='/new'>New Hotel</Link></li>
                 </ul>
             </nav>
         )

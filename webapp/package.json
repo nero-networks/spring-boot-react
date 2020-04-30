@@ -27,7 +27,7 @@
     "babel-loader": "^6.2.4",
     "css-loader": "^0.28.11",
     "file-loader": "^0.8.5",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "node-sass": "^4.9.0",
     "resolve-url-loader": "^2.3.0",
     "sass-loader": "^4.1.1",
